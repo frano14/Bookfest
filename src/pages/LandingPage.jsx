@@ -22,12 +22,12 @@ export default function LandingPage() {
     <>
       <NavBar />
       <div>
-        <div className="max-w-[1200px] m-auto">
+        <div className="max-w-[1200px] m-auto px-6 xl:px-0">
           <Hero className="w-screen h-screen" />
         </div>
       </div>
       <div className="bg-[#111111]">
-        <div className="max-w-[1200px] m-auto">
+        <div className="max-w-[1200px] m-auto px-6 xl:px-0">
           <AboutUs />
         </div>
       </div>

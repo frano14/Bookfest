@@ -7,7 +7,7 @@ body {
 }
 
 .blue__gradient {
-  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #666666 100%);
+  background: linear-gradient(180deg, #111111 0%, #666666 100%);
   filter: blur(123px);
 }
 
