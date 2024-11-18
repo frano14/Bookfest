@@ -28,7 +28,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="text-gray  py-3 fixed z-10 top-0 right-0 left-0 bg-bg">
+    <nav className="text-gray  py-3 fixed z-50 top-0 right-0  left-0 bg-bg">
       <div className="max-w-[1200px] m-auto flex justify-between items-center px-6 xl:px-0">
         <Link to="/" className="text-[24px] font-bold">
           <span className="customMontserratFont">Book </span>
