@@ -4,6 +4,10 @@
 body {
   background-color: #e9e6dc;
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  color: #262b26;
 }
 
 .blue__gradient {

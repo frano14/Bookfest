@@ -1,8 +1,16 @@
+/* eslint-disable no-unused-vars */
+// eslint-disable-next-line no-unused-vars
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 
-/* eslint-disable react/prop-types */
 function Book({ book }) {
   const [isHovered, setIsHovered] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
+  const handleClick = () => {
+    setIsActive(!isActive);
+    console.log(isActive);
+  };
 
   return (
     <div
@@ -11,12 +19,9 @@ function Book({ book }) {
           ? "bg-[#eee4d0] border-[1px] border-textGray"
           : " border-[1px] border-bg"
       }  pt-4 mb-4`}
-      onMouseOver={() => {
-        // eslint-disable-next-line no-unused-vars
-        setIsHovered((prev) => (prev = true));
-        console.log(isHovered);
-      }}
+      onMouseOver={() => setIsHovered(true)}
       onMouseOut={() => setIsHovered(false)}
+      onClick={handleClick}
     >
       <div className="h-[15%] px-2">
         <p className="customMontserratFont text-start">
